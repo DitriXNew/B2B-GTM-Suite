@@ -449,4 +449,4 @@ A persona is a hypothesis: it has to be validated. Experiment methods:
 
 Copyright (c) 2026 Kostiantyn Ivanov (Ananas-Agency, ananas-agency.com).
 
-Released under the MIT License — keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE.md](../LICENSE.md)
+Released under the MIT License — keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE](../../../LICENSE)

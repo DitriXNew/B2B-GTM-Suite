@@ -1,18 +1,20 @@
 #!/usr/bin/env python3
 """Rebuild the compiled Handbook from the unpacked skill sources.
 
-Run from anywhere:  python output/build-handbook.py
+Run from anywhere:  python scripts/build-handbook.py
 
 For each skill it emits:  # <N>. <Title> / Skill ID / <SKILL.md body> /
 reference materials / <rules-*.md body>, matching the Handbook's format. Internal
-links are rewritten to the Handbook's root context (../LICENSE.md -> LICENSE.md,
+links are rewritten to the Handbook's root context (any-depth ../LICENSE -> LICENSE,
 ../dossier-format.md -> dossier-format.md); references/ links are left as-is.
 
-Run this after editing any skill so the Handbook stays in sync with output/<slug>/.
+Run this after editing any skill so the Handbook stays in sync with <folder>/<slug>/.
 """
 import os
+import re
 
-BASE = os.path.dirname(os.path.abspath(__file__))
+# repo root = parent of this scripts/ folder
+BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(BASE, "B2B Go-to-Market Suite - Handbook by Ananas Agency.md")
 
 # (label, title, folder, slug, rules_filename)  — order = Handbook order
@@ -44,9 +46,9 @@ def strip_frontmatter(text):
 
 
 def fix_links(t):
-    t = t.replace("](../../LICENSE.md)", "](LICENSE.md)")
-    t = t.replace("](../LICENSE.md)", "](LICENSE.md)")
-    t = t.replace("](../dossier-format.md)", "](dossier-format.md)")
+    # collapse any-depth relative links to the root-context paths the Handbook uses
+    t = re.sub(r"\]\((?:\.\./)*LICENSE(?:\.md)?\)", "](LICENSE)", t)
+    t = re.sub(r"\]\((?:\.\./)*dossier-format\.md\)", "](dossier-format.md)", t)
     return t
 
 

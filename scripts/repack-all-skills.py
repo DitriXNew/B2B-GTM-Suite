@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Repack every unpacked skill folder back into its .skill archive.
 
-Run from the repo root:  python output/repack-all-skills.py
+Run from anywhere:  python scripts/repack-all-skills.py
 
 For each entry below it zips  <folder>/<slug>/  ->  <folder>/<slug>.skill
 with forward-slash internal paths (matching the original archives), then
@@ -10,7 +10,8 @@ removes the DO_NOT_FORGET_TO_REZIP.md marker for that folder.
 import zipfile
 import os
 
-BASE = os.path.dirname(os.path.abspath(__file__))
+# repo root = parent of this scripts/ folder
+BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 SPECS = [
     ("0 Company Brief", "company-brief", "rules-company-brief.md"),

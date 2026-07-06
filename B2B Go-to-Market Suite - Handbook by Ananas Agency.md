@@ -105,7 +105,7 @@ This suite is meant to run as one continuous session, start to finish. **Deliver
 
 Copyright (c) 2026 Kostiantyn Ivanov (Ananas-Agency, ananas-agency.com).
 
-Released under the MIT License — keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE.md](LICENSE.md)
+Released under the MIT License — keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE](LICENSE)
 
 ---
 
@@ -403,7 +403,7 @@ header.doc{border-color:#ccc;border-top-color:var(--brand)}
 
 Copyright (c) 2026 Kostiantyn Ivanov (Ananas-Agency, ananas-agency.com).
 
-Released under the MIT License — keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE.md](../../../LICENSE.md)
+Released under the MIT License — keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE](LICENSE)
 
 ================================================================================
 
@@ -570,7 +570,7 @@ This suite runs as one continuous session. **Deliver only your own two files now
 
 Copyright (c) 2026 Kostiantyn Ivanov (Ananas-Agency, ananas-agency.com).
 
-Released under the MIT License — keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE.md](LICENSE.md)
+Released under the MIT License — keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE](LICENSE)
 
 ---
 
@@ -1053,7 +1053,7 @@ header.doc{border-color:#ccc;border-top-color:var(--brand)}
 
 Copyright (c) 2026 Kostiantyn Ivanov (Ananas-Agency, ananas-agency.com).
 
-Released under the MIT License — keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE.md](LICENSE.md)
+Released under the MIT License — keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE](LICENSE)
 
 ================================================================================
 
@@ -1176,7 +1176,7 @@ This suite runs as one continuous session. **Deliver only your own two files now
 
 Copyright (c) 2026 Kostiantyn Ivanov (Ananas-Agency, ananas-agency.com).
 
-Released under the MIT License — keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE.md](LICENSE.md)
+Released under the MIT License — keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE](LICENSE)
 
 ---
 
@@ -1508,7 +1508,7 @@ header.doc{border-color:#ccc;border-top-color:var(--brand)}
 
 Copyright (c) 2026 Kostiantyn Ivanov (Ananas-Agency, ananas-agency.com).
 
-Released under the MIT License — keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE.md](LICENSE.md)
+Released under the MIT License — keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE](LICENSE)
 
 ================================================================================
 
@@ -1684,7 +1684,7 @@ This suite runs as one continuous session. **Deliver only your own two files now
 
 Copyright (c) 2026 Kostiantyn Ivanov (Ananas-Agency, ananas-agency.com).
 
-Released under the MIT License — keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE.md](LICENSE.md)
+Released under the MIT License — keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE](LICENSE)
 
 ---
 
@@ -2143,7 +2143,7 @@ A persona is a hypothesis: it has to be validated. Experiment methods:
 
 Copyright (c) 2026 Kostiantyn Ivanov (Ananas-Agency, ananas-agency.com).
 
-Released under the MIT License — keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE.md](LICENSE.md)
+Released under the MIT License — keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE](LICENSE)
 
 ================================================================================
 
@@ -2339,7 +2339,7 @@ Full format: [dossier-format.md](dossier-format.md).
 
 Copyright (c) 2026 Kostiantyn Ivanov (Ananas-Agency, ananas-agency.com).
 
-Released under the MIT License — keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE.md](LICENSE.md)
+Released under the MIT License — keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE](LICENSE)
 
 ---
 
@@ -2867,7 +2867,7 @@ header.doc{border-color:#ccc;border-top-color:var(--brand)}
 
 Copyright (c) 2026 Kostiantyn Ivanov (Ananas-Agency, ananas-agency.com).
 
-Released under the MIT License — keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE.md](LICENSE.md)
+Released under the MIT License — keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE](LICENSE)
 
 ================================================================================
 
@@ -3014,7 +3014,7 @@ This suite runs as one continuous session. **Deliver only your own two files now
 
 Copyright (c) 2026 Kostiantyn Ivanov (Ananas-Agency, ananas-agency.com).
 
-Released under the MIT License — keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE.md](LICENSE.md)
+Released under the MIT License — keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE](LICENSE)
 
 ---
 
@@ -3389,7 +3389,7 @@ header.doc{border-color:#ccc;border-top-color:var(--brand)}
 
 Copyright (c) 2026 Kostiantyn Ivanov (Ananas-Agency, ananas-agency.com).
 
-Released under the MIT License — keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE.md](LICENSE.md)
+Released under the MIT License — keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE](LICENSE)
 
 ================================================================================
 
@@ -3534,7 +3534,7 @@ This suite runs as one continuous session. **Deliver only your own two files now
 
 Copyright (c) 2026 Kostiantyn Ivanov (Ananas-Agency, ananas-agency.com).
 
-Released under the MIT License — keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE.md](LICENSE.md)
+Released under the MIT License — keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE](LICENSE)
 
 ---
 
@@ -3924,7 +3924,7 @@ header.doc{border-color:#ccc;border-top-color:var(--brand)}
 
 Copyright (c) 2026 Kostiantyn Ivanov (Ananas-Agency, ananas-agency.com).
 
-Released under the MIT License — keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE.md](LICENSE.md)
+Released under the MIT License — keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE](LICENSE)
 
 ================================================================================
 
@@ -4081,7 +4081,7 @@ Full format and section order: [dossier-format.md](dossier-format.md).
 
 Copyright (c) 2026 Kostiantyn Ivanov (Ananas-Agency, ananas-agency.com).
 
-Released under the MIT License — keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE.md](LICENSE.md)
+Released under the MIT License — keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE](LICENSE)
 
 ---
 
@@ -4314,4 +4314,4 @@ questions as tables, **one `.card` per battlecard**, each outreach and marketing
 
 Copyright (c) 2026 Kostiantyn Ivanov (Ananas-Agency, ananas-agency.com).
 
-Released under the MIT License — keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE.md](LICENSE.md)
+Released under the MIT License — keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE](LICENSE)

@@ -1,4 +1,4 @@
-# Ananas-Agency — B2B Go-to-Market Suite
+# B2B Go-to-Market Suite by Ananas-Agency
 
 A suite of **AI agent skills** that turn an assistant (Claude, or any skill-compatible agent) into a guided B2B sales strategist. Each skill walks you through a structured, step-by-step interview and delivers a concrete sales-strategy asset: value propositions, buyer personas, buying-process maps, validation experiments, and gap analyses.
 
@@ -139,8 +139,9 @@ Each value is also assigned a **stable ID** by category — `PV-` (Product value
 +-- LICENSE
 +-- B2B Go-to-Market Suite - Handbook by Ananas Agency.md  <- all skills compiled into one document
 +-- dossier-format.md                         <- spec for the accreting Strategy Dossier
-+-- repack-all-skills.py                      <- rebuilds the .skill archives after editing
-+-- build-handbook.py                         <- rebuilds the compiled handbook from the skill sources
++-- scripts/                                  <- maintenance scripts (for editors/contributors only)
+|   +-- repack-all-skills.py                  <- rebuilds the .skill archives after editing
+|   +-- build-handbook.py                     <- rebuilds the compiled handbook from the skill sources
 |
 +-- 0 Company Brief/                          <- one-time intake (unpacked slug: company-brief)
 +-- 1 Value Proposition/
@@ -254,10 +255,10 @@ Open [B2B Go-to-Market Suite - Handbook by Ananas Agency.md](B2B%20Go-to-Market%
 
 *This section is only for people **editing** the skills. If you just want to use them, you can ignore the two scripts below.*
 
-The repo ships two small helper scripts at the root:
+The repo ships two small helper scripts in the **`scripts/`** folder:
 
-- **`repack-all-skills.py`** — rezips each unpacked `<slug>/` folder into its installable `<slug>.skill` package (with the correct internal paths).
-- **`build-handbook.py`** — regenerates the compiled `B2B Go-to-Market Suite - Handbook by Ananas Agency.md` from the skill sources.
+- **`scripts/repack-all-skills.py`** — rezips each unpacked `<slug>/` folder into its installable `<slug>.skill` package (with the correct internal paths).
+- **`scripts/build-handbook.py`** — regenerates the compiled `B2B Go-to-Market Suite - Handbook by Ananas Agency.md` from the skill sources.
 
 The unpacked `<slug>/` folders are the single source of truth; the `.skill` archives and the compiled handbook are built from them by those scripts. The agent reads the `.skill`, so **after editing the source you must rebuild the archives** (and the handbook):
 
@@ -265,14 +266,14 @@ The unpacked `<slug>/` folders are the single source of truth; the `.skill` arch
 2. From the repository root, run:
 
    ```bash
-   python repack-all-skills.py
+   python scripts/repack-all-skills.py
    ```
 
    This rezips all `<skill>/` folders into their `.skill` packages (with the correct internal paths).
 3. If you changed any skill content, also rebuild the compiled handbook so it stays in sync:
 
    ```bash
-   python build-handbook.py
+   python scripts/build-handbook.py
    ```
 
 ---
