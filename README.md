@@ -12,8 +12,8 @@ The skills are written in plain Markdown with YAML frontmatter, so they are vers
 
 **Two steps — install once, then paste one prompt. Nothing to prepare; the first skill interviews you for everything.**
 
-**1. Install (easiest path — Claude app, no coding).** In [claude.ai](https://claude.ai) or Claude Desktop, open **Settings → Capabilities → Skills** and turn Skills on. Then, for each numbered folder, **Upload skill** its `.skill` package (e.g. `0 Company Brief/company-brief.skill`). Repeat for all eight (0–7).
-> *Other ways to install (Claude Code, or copy & paste for any/local model) are in [How to use](#how-to-use).*
+**1. Install (easiest path — Claude app, no coding).** First, get all the skills in one go: on the repo, click **Code → Download ZIP** (or `git clone`) and unzip it. Then in [claude.ai](https://claude.ai) or Claude Desktop, open **Settings → Capabilities → Skills** and turn Skills on, and for each numbered folder **Upload skill** its `.skill` package (e.g. `0 Company Brief/company-brief.skill`). Repeat for all eight (0–7).
+> *You upload the eight `.skill` files one at a time — the downloaded repo ZIP is just to grab them all at once (it can't be uploaded as a single skill). Other ways to install (Claude Code, or copy & paste for any/local model) are in [How to use](#how-to-use).*
 
 **2. Start — open a new chat and paste this:**
 
@@ -216,9 +216,10 @@ It's two steps: **install once**, then **paste the start prompt**. You don't pre
 ### Step 1 — Install (pick one path)
 
 **Path A — Claude app (recommended, no coding).**
-1. In Claude (web or desktop), open **Settings → Capabilities** and turn on **Skills** (and code execution if prompted). *Available on paid plans.*
-2. For each numbered folder, grab its `.skill` package (e.g. `0 Company Brief/company-brief.skill`). **A `.skill` file is a ZIP**: if the uploader only accepts `.zip`, just rename it (e.g. `company-brief.zip`).
-3. Click **Upload skill** (or "Add skill") and select the file. **Repeat for all eight skills (0–7)** so the whole sequence is available.
+1. Get all the files at once: on the repo, click **Code → Download ZIP** (or `git clone`) and unzip it. *(This just grabs the eight `.skill` packages in one step — you still upload them individually below; the whole-repo ZIP can't be uploaded as a single skill.)*
+2. In Claude (web or desktop), open **Settings → Capabilities** and turn on **Skills** (and code execution if prompted). *Available on paid plans.*
+3. For each numbered folder, grab its `.skill` package (e.g. `0 Company Brief/company-brief.skill`). **A `.skill` file is a ZIP**: if the uploader only accepts `.zip`, just rename it (e.g. `company-brief.zip`).
+4. Click **Upload skill** (or "Add skill") and select the file. **Repeat for all eight skills (0–7)** so the whole sequence is available.
 
 **Path B — Claude Code (for developers).**
 1. Install Claude Code (`npm install -g @anthropic-ai/claude-code`) and open your project.
