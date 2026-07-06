@@ -4,7 +4,22 @@ A suite of **AI agent skills** that turn an assistant (Claude, or any skill-comp
 
 The skills are written in plain Markdown with YAML frontmatter, so they are version-controllable, diffable, and editable outside any tool. They also ship as importable `.skill` packages.
 
-> **License:** [MIT](LICENSE.md) — free to use, adapt, and redistribute (including commercially); just keep the copyright notice, and a credit to the author is kindly appreciated. Author: **Kostiantyn Ivanov** (Ananas-Agency, [ananas-agency.com](https://ananas-agency.com)).
+> **License:** [MIT](LICENSE) — free to use, adapt, and redistribute (including commercially); just keep the copyright notice, and a credit to the author is kindly appreciated. Author: **Kostiantyn Ivanov** (Ananas-Agency, [ananas-agency.com](https://ananas-agency.com)).
+
+---
+
+## ⚡ Quick start
+
+**Two steps — install once, then paste one prompt. Nothing to prepare; the first skill interviews you for everything.**
+
+**1. Install (easiest path — Claude app, no coding).** In [claude.ai](https://claude.ai) or Claude Desktop, open **Settings → Capabilities → Skills** and turn Skills on. Then, for each numbered folder, **Upload skill** its `.skill` package (e.g. `0 Company Brief/company-brief.skill`). Repeat for all eight (0–7).
+> *Other ways to install (Claude Code, or copy & paste for any/local model) are in [How to use](#how-to-use).*
+
+**2. Start — open a new chat and paste this:**
+
+> **Run the Ananas-Agency B2B go-to-market sequence with me from the start. Begin with the Company Brief to gather everything about my company, then carry me through every skill in order — value propositions, competitor analysis, buyer persona, experiments, buying process, gap analysis, and messaging — as one continuous session, interviewing me step by step. I have nothing prepared; just ask me what you need.**
+
+That's it. Answer the questions as they come; say **"continue"** if it ever pauses between skills. → Full details in **[How to use](#how-to-use)**.
 
 ---
 
@@ -121,7 +136,7 @@ Each value is also assigned a **stable ID** by category — `PV-` (Product value
 ```
 .
 +-- README.md
-+-- LICENSE.md
++-- LICENSE
 +-- B2B Go-to-Market Suite - Handbook by Ananas Agency.md  <- all skills compiled into one document
 +-- dossier-format.md                         <- spec for the accreting Strategy Dossier
 +-- repack-all-skills.py                      <- rebuilds the .skill archives after editing
@@ -269,4 +284,4 @@ This work is released under the **MIT License** — you may use, adapt, and redi
 
 > "Ananas-Agency B2B Go-to-Market Suite" by **Kostiantyn Ivanov** (Ananas-Agency, ananas-agency.com).
 
-Full terms: [LICENSE.md](LICENSE.md)
+Full terms: [LICENSE](LICENSE)
