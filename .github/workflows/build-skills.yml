@@ -1,0 +1,79 @@
+name: Build Skills
+
+# Rebuilds every .skill archive from its source folder and publishes them.
+#
+# Triggers:
+#   - push to main touching skill sources -> archives uploaded as workflow artifacts
+#   - manual "Run workflow" button        -> same
+#   - publishing a GitHub Release          -> archives ALSO auto-attached to that Release
+#
+# What you get: download the artifact zip (or grab a file from the Release),
+# unzip if needed, and drop the .skill into Claude.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "*/**/SKILL.md"
+      - "*/**/references/**"
+      - "scripts/repack-all-skills.py"
+      - ".github/workflows/build-skills.yml"
+  workflow_dispatch:
+  release:
+    types: [published]
+
+permissions:
+  contents: write # needed to attach assets to the Release
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Repack all skills
+        run: python scripts/repack-all-skills.py
+
+      - name: Collect .skill archives
+        run: |
+          mkdir -p dist
+          # Copy every freshly built archive into a flat dist/ folder.
+          find . -name "*.skill" -not -path "./dist/*" -exec cp {} dist/ \;
+          echo "Built archives:"
+          ls -la dist/
+
+      - name: Bundle everything into one zip
+        run: |
+          cd dist
+          zip -j b2b-gtm-suite-skills.zip *.skill
+          cd ..
+          ls -la dist/
+
+      - name: Upload archives as workflow artifact
+        uses: actions/upload-artifact@v7
+        with:
+          name: b2b-gtm-suite-skills
+          path: dist/*.skill
+          if-no-files-found: error
+
+      - name: Upload combined bundle as workflow artifact
+        uses: actions/upload-artifact@v7
+        with:
+          name: b2b-gtm-suite-skills-bundle
+          path: dist/b2b-gtm-suite-skills.zip
+          if-no-files-found: error
+
+      - name: Attach archives to Release
+        if: github.event_name == 'release'
+        uses: softprops/action-gh-release@v3
+        with:
+          files: |
+            dist/*.skill
+            dist/b2b-gtm-suite-skills.zip
+          generate_release_notes: true
